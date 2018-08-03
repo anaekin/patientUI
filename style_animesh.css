@@ -1,8 +1,10 @@
-*{
+body{
     overflow: hidden;
-    outline: none;
+   
 }
-
+*{
+     outline: none;
+}
 body{
     background: #272727;
 }
@@ -19,21 +21,26 @@ body{
     height: calc(100% - 50px - 50px);
     background: white;
 }
-
+.row{
+    
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
 .header{
     text-align: center; 
-    background: #409c4c;
-    
+    color: #409c4c;
+    background: white;
     margin:0px !important;
-    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.2), 0px 3px 9px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
 .header h4{
+    font-size: 26px;
     
-    color: white;
+    color: #409c4c;
     line-height: 60px;
     margin:0px !important;
-    text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
     font-family: 'Jua', sans-serif;
     /*
     font-family: 'Varela Round', sans-serif;
@@ -58,7 +65,7 @@ body{
 /*    width: 100%;*/
     width: 25px;
     height: 2px;
-    background: white;
+    background: #409c4c;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -75,6 +82,56 @@ body{
     transform: rotate(45deg) translate(-5px, -8px);
 }
 
+
+/******* INPUT AREA ****************/
+.fa {
+        margin-left: -3px !important;
+}
+.input-area{
+    position: absolute;
+    bottom: 20px;
+    width : 100%;
+    z-index:10;
+}
+
+.inputBox {
+    outline: none;
+    margin: 0 15px 0 15px ;
+    width: calc(100% - 105px);
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    
+    font-family: 'Varela Round', sans-serif;
+    border: 0.5px solid #c7c5c5;
+    
+}
+.inputBox:hover, .inputBox:focus{
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    transition: 0.4s border ease-in;
+}
+.btn{
+    outline: none !important;
+    margin: 0 15px 0 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background: white;
+    color: #8e8d8d;
+    border: 0.5px solid #c7c5c5;
+}
+
+.btn:hover {
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+    border:none;
+    color:white;
+    background: #409c4c;
+    transition: 0.3s ease;
+}
+
+
 @media screen and (max-width: 1024px) {
   .frame {
     width:688px;
@@ -88,4 +145,8 @@ body{
     width:100%;
     height:100%;
   }
+    
+    .inputBox{
+        
+    }
 }

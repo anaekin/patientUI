@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
 
     <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Aclonica|Black+Han+Sans|Chau+Philomene+One|Denk+One|Jua|Mouse+Memoirs" rel="stylesheet">
@@ -22,10 +22,10 @@ font-family: 'Mouse Memoirs', sans-serif;
 font-family: 'Denk One', sans-serif;
 font-family: 'Chau Philomene One', sans-serif;
      -->
-     
-     <!-- ***************** Dev Styles Goes here ************************************************* -->
-     <link href="style_animesh.css" rel="stylesheet">
-     <!-- ***************** Dev Styles End ************************************************* -->
+
+    <!-- ***************** Dev Styles Goes here ************************************************* -->
+    <link href="style_animesh.css" rel="stylesheet">
+    <!-- ***************** Dev Styles End ************************************************* -->
 </head>
 
 <body ng-app="NapierAssistant" ng-controller="LoginController" ng-init="cross=false;">
@@ -34,36 +34,38 @@ font-family: 'Chau Philomene One', sans-serif;
     <div class="frame">
         <div class="row header">
             <div class="col-md-1 col-xs-1 menubar" ng-class="{'change':cross}" ng-click="cross=!cross;">
-              <div class="bar1" ></div>
-              <div class="bar2" ></div>
-              <div class="bar3" ></div>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
             <div class="col-md-11 col-xs-11 text-center">
-                <h4>Napier Assistant</h4>
+               
+                <h4><img src="chatbot_logo_sm.png" alt="image"> Napier Assistant</h4>
             </div>
-            
+
         </div>
-        <div class="row input-area">
-            <div class="col-md-10">
-                <input type="text" ng-model="data.inputMsg" placeholder="Enter">
-            </div>
-            <div class="col-md-2">
-                <button ng-click="send()" placeholder="Enter"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-            </div>
+        <div class="input-area">
+
+                <input type="text" class="inputBox" ng-model="data.inputMsg" placeholder="Say something.." >
+                <button  class="btn" ng-click="send()"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
         </div>
     </div>
 
 
     <!-- ******************* Dependencies goes here *************************************************** -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-touch.js"></script>
-    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/mobiscroll.angularjs.min.js"></script>
-    <script src="autoCss/awesomplete.js"></script>
+<!--    <script src="autoCss/awesomplete.js"></script>-->
 
     <!-- ******************* Dev Scripts Goes here *************************************************** -->
     <script src="test.js"></script>
