@@ -29,12 +29,12 @@ font-family: 'Chau Philomene One', sans-serif;
     <!-- ***************** Dev Styles End ************************************************* -->
 </head>
 
-<body ng-app="NapierAssistant" ng-controller="LoginController" ng-init="cross=false;">
+<body ng-app="NapierAssistant" ng-controller="LoginController" ng-init="cross=false;show=false;">
 
-
+<div class="body">
     <div class="frame">
         <div class="row header">
-            <div class="col-md-1 col-xs-1 menubar" ng-class="{'change':cross}" ng-click="cross=!cross;">
+            <div class="col-md-1 col-xs-1 menubar" ng-class="{'change':cross}" ng-click="cross=!cross; show = !show">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -50,7 +50,16 @@ font-family: 'Chau Philomene One', sans-serif;
             <input type="text" class="inputBox" ng-model="data.inputMsg" placeholder="Say something..">
             <button class="btn" ng-click="send()"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
         </div>
+        
+        <div class="sideMenu" ng-class="{'visible' : show, 'opaque': show}">
+            <ul>
+                <li class="sideMenuItem">Item 1</li>
+                <li class="sideMenuItem">Item 2</li>
+            </ul>
+        </div>
     </div>
+</div>
+    
 
 
     <!-- ******************* Dependencies goes here *************************************************** -->
