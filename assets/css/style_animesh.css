@@ -66,12 +66,15 @@ body{
     font-family: 'Chau Philomene One', sans-serif;
     */
 }
-
+.header-head{
+    width: calc(100% - 55px);
+}
 
 .menubar {
 
     padding:15px !important;
     cursor: pointer;
+    width:55px;
 }
 
 .bar1, .bar2, .bar3 {
@@ -116,7 +119,7 @@ body{
 .inputBox {
     outline: none;
     margin: 0 15px 0 15px ;
-    width: calc(100% - 105px);
+    width: calc(100% - 170px);
     padding: 10px 15px 10px 15px;
     border-radius: 20px;
     font-size: 18px;
@@ -162,11 +165,31 @@ body{
 .btn:focus{
     color: #00aa9d;
 }
+.listen-animate{
+   animation: opaque 2s infinite linear;
+}
+@keyframes opaque {
+     0% {
+        opacity : 0;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 /********************* Side Menu *************************************/
 .sideMenu {
     z-index: 10;
     height: calc(100% - 60px);
-    position: relative;
+    position: absolute;
     background: #2b3f53;
 /*    background: white;*/
     width: 75%;
@@ -205,6 +228,11 @@ ul{
 }
 
 /********************************** MESSAGES *****************************************/
+.message-area{
+     position: absolute;
+    width: 100%;
+
+}
 .botIcon{
     outline: none !important;
     margin: 10px 5px 10px 10px;
@@ -235,14 +263,12 @@ ul{
 .botIcon img{
     margin-bottom: 0;
 }
-.message-area{
-    position: relative;
-}
 .message{
     display: inline-block;
     padding: 10px;
     margin: 10px 5px 10px 5px;
     width: 60%;
+        font-family: 'Varela Round', sans-serif;
 }
 .botMessage {
     border: 1px solid #00aa9d;
