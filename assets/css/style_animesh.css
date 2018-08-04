@@ -26,7 +26,8 @@ body{
     
     width: 500px;
     height: calc(100% - 50px - 50px);
-    background: white;
+/*    background: white;*/
+    background: #2b3f53;
 }
 .row{
     
@@ -35,8 +36,12 @@ body{
 }
 .header{
     text-align: center; 
+/*
     color: #409c4c;
     background: white;
+*/
+    color: #00aa9d;
+    background: #2b3f53;
     margin:0px !important;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
 }
@@ -44,7 +49,8 @@ body{
 .header h4{
     font-size: 26px;
     
-    color: #409c4c;
+/*    color: #409c4c;*/
+    color: #00aa9d;
     line-height: 60px;
     margin:0px !important;
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
@@ -72,11 +78,17 @@ body{
 /*    width: 100%;*/
     width: 25px;
     height: 2px;
-    background: #409c4c;
+/*    background: #409c4c;*/
+    background: #00aa9d;
     margin: 6px 0;
     transition: 0.4s;
 }
 
+.menubar:hover .bar1, .menubar:hover .bar2,.menubar:hover .bar3{
+    box-shadow: 0px 4px 10px 0px rgba(0, 170, 157, 0.37), 0px 2px 9px 0px rgba(0, 170, 157, 0.63);
+/*    border: none;*/
+    
+}
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-4px, 6px);
     transform: rotate(-45deg) translate(-4px, 6px);
@@ -110,13 +122,17 @@ body{
     font-size: 18px;
     
     font-family: 'Varela Round', sans-serif;
-    border: 0.5px solid #c7c5c5;
+/*    border: 0.5px solid #c7c5c5;*/
+    border: 0.5px solid #00aa9d;
+    background: #2b3f53;
+    color: #c7c7c7;
     
 }
 .inputBox:hover, .inputBox:focus{
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
-    border: none;
-    transition: 0.4s border ease-in;
+/*    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 8px 0px rgba(0, 0, 0, 0.25);*/
+    box-shadow: 0px 4px 10px 0px rgba(0, 170, 157, 0.37), 0px 2px 9px 0px rgba(0, 170, 157, 0.63);
+/*    border: none;*/
+    transition: 0.2s ease-in;
 }
 .btn{
     outline: none !important;
@@ -125,16 +141,22 @@ body{
     width: 50px;
     height: 50px;
     font-size: 24px;
-    background: white;
-    color: #8e8d8d;
-    border: 0.5px solid #c7c5c5;
+/*    background: white;*/
+    background: #2b3f53;
+    color: #00aa9d;
+    border: 0.5px solid #00aa9d;
 }
 
 .btn:hover {
+/*
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
     border:none;
-    color:white;
-    background: #409c4c;
+*/
+    box-shadow: 0px 4px 10px 0px rgba(0, 170, 157, 0.37), 0px 2px 9px 0px rgba(0, 170, 157, 0.63);
+/*    color:white;*/
+    color: #00aa9d;
+/*    background: #409c4c;*/
+/*    background: #00aa9d;*/
     transition: 0.3s ease;
 }
 /********************* Side Menu *************************************/
@@ -142,7 +164,8 @@ body{
     z-index: 10;
     height: calc(100% - 60px);
     position: relative;
-    background: white;
+    background: #2b3f53;
+/*    background: white;*/
     width: 75%;
     left: -500px;
     opacity: 0;
@@ -166,12 +189,14 @@ body{
     font-family: 'Varela Round', sans-serif;
     padding: 10px;
     font-size: 16px;
-    background: white;
-    color: #409c4c;
+    background: #2b3f53;
+/*    background: white;*/
+    color: #00aa9d;
+/*    color: #409c4c;*/
     cursor: pointer;
 }
 .sideMenu ul>li:hover {
-    background: #409c4c;
+    background: #00aa9d;
     color: white;
 }
 @media screen and (max-width: 1024px) {
