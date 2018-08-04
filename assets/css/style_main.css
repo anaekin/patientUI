@@ -1,0 +1,315 @@
+body {
+    overflow: hidden;
+
+}
+
+* {
+    outline: none;
+}
+
+body {
+    background: #272727;
+    /*
+    background: #2b3f53; Background
+    background: #00aa9d; Accent
+*/
+}
+
+.body {
+    z-index: 50;
+}
+
+.frame {
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: calc(100% - 50px - 50px);
+    
+}
+
+.row {
+
+    margin-left: 0px !important;
+    margin-right: -17px !important;
+}
+
+.header {
+    text-align: center;
+    
+    margin: 0px !important;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header h4 {
+    font-size: 26px;
+    
+    line-height: 60px;
+    margin: 0px !important;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Jua', sans-serif;
+    /*
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Aclonica', sans-serif;
+ 
+    font-family: 'Black Han Sans', sans-serif;   
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: 'Denk One', sans-serif;
+    font-family: 'Chau Philomene One', sans-serif;
+    */
+}
+
+.header-head {
+    width: calc(100% - 55px);
+}
+
+.menubar {
+
+    padding: 15px !important;
+    cursor: pointer;
+    width: 55px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 2px;
+   
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -8px);
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+
+
+/******* INPUT AREA ****************/
+
+.fa {
+    margin-left: -3px !important;
+}
+
+.input-area {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 10;
+}
+
+.inputBox {
+    outline: none;
+    margin: 0 15px 0 15px;
+    width: calc(100% - 170px);
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Varela Round', sans-serif;
+    border: 0.5px solid;
+    
+
+}
+
+.inputBox:hover,
+.inputBox:focus {
+    transition: 0.2s ease-in;
+}
+
+.btn {
+    outline: none !important;
+    margin: 0 15px 0 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+
+    border: 0.5px solid;
+}
+
+.btn:hover {
+    transition: 0.3s ease;
+}
+
+
+.listen-animate {
+    animation: opaque 2s infinite linear;
+}
+
+@keyframes opaque {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/********************* Side Menu *************************************/
+
+.sideMenu {
+    z-index: 10;
+    height: calc(100% - 60px);
+    position: absolute;
+    
+    width: 75%;
+    left: -500px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 5px 11px 11px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s left ease-in, 0.1s opacity cubic-bezier(1, 0, 1, 0), 0.5s visibility cubic-bezier(1, 0, 1, 0);
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.2s left ease-in, 0.3s opacity cubic-bezier(1, 0, 1, 0), 0.1s visibility cubic-bezier(1, 0, 1, 0);
+
+    left: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.sideMenu ul > li {
+    font-family: 'Varela Round', sans-serif;
+    padding: 10px;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.sideMenu ul > li:hover {
+
+    color: white;
+}
+
+/********************************** MESSAGES *****************************************/
+
+.message-area {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 150px);
+    overflow: hidden;
+
+}
+
+.message-list {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px !important;
+    /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box;
+    /* So the width will be 100% + 17px */
+}
+
+
+.botIcon {
+    outline: none !important;
+    margin: 10px 5px 10px 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-left: 3px;
+    font-size: 14px;
+    vertical-align: top;
+    
+  
+    border: 1px solid ;
+}
+
+.userIcon {
+    outline: none !important;
+    margin: 10px 10px 10px 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    vertical-align: bottom;
+
+    border: 1px solid ;
+}
+
+.botIcon img {
+    margin-bottom: 0;
+}
+
+.message {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
+    width: 60%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.botMessage {
+    border: 1px solid ;
+    
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.personMessage {
+    border: 1px solid;
+    float: right;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+    .row {
+        margin-right: 0px !important;
+    }
+    .frame {
+        width: 688px;
+        height: calc(100% - 50px - 50px);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .row {
+        margin-right: 0px !important;
+    }
+    .frame {
+        width: 100%;
+        height: 100%;
+    }
+
+    .inputBox {}
+}

@@ -1,0 +1,89 @@
+.frame {
+    background: #ffffff;
+}
+
+.header {
+    color: #4198e4;
+    background: #4198e4;
+}
+
+.header h4 {
+    color: #ffffff;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    background: #ffffff;
+}
+.menubar:hover .bar1,
+.menubar:hover .bar2,
+.menubar:hover .bar3 {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.37), 0px 2px 9px 0px rgba(0, 0, 0, 0.63);
+
+}
+.inputBox {
+    background: #ffffff;
+    color: #797979;
+    border-color: #4198e4;
+}
+.inputBox:hover,
+.inputBox:focus {
+    box-shadow: 0px 4px 10px 0px rgba(65, 152, 228, 0.37), 0px 2px 9px 0px rgba(65, 152, 228, 0.63);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #cacaca;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #cacaca;
+}
+.btn {
+    background: #ffffff;
+    color: #4198e4;
+    border-color: #4198e4;
+}
+
+.btn:hover {
+    color: #4198e4;
+    box-shadow: 0px 4px 10px 0px rgba(65, 152, 228, 0.37), 0px 2px 9px 0px rgba(65, 152, 228, 0.63);
+}
+.btn:focus {
+    color: #4198e4;
+}
+
+.sideMenu {
+    background: #ffffff;
+}
+
+.sideMenu ul > li {
+    background: #ffffff;
+    color: #4198e4;
+}
+
+.sideMenu ul > li:hover {
+    background: #4198e4;
+}
+
+.botIcon {
+    background: #4198e4;
+    color: #4198e4;
+    border-color: #4198e4;
+}
+
+.userIcon {
+    background: #ffffff;
+    color: #4198e4;
+    border-color: #4198e4;
+}
+
+.botMessage {
+    border-color: #4198e4;
+    color: #4198e4;
+}
+
+.personMessage {
+    background: #4198e4;
+    color: #ffffff;
+    border-color: #4198e4;
+}

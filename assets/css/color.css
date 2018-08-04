@@ -1,0 +1,82 @@
+.frame {
+    background: #2b3f53;
+}
+
+.header {
+    color: #00aa9d;
+    background: #2b3f53;
+}
+
+.header h4 {
+    color: #00aa9d;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    background: #00aa9d;
+}
+.menubar:hover .bar1,
+.menubar:hover .bar2,
+.menubar:hover .bar3 {
+    box-shadow: 0px 4px 10px 0px rgba(0, 170, 157, 0.37), 0px 2px 9px 0px rgba(0, 170, 157, 0.63);
+
+}
+.inputBox {
+    background: #2b3f53;
+    color: #c7c7c7;
+    border-color: #00aa9d;
+}
+.inputBox:hover,
+.inputBox:focus {
+    box-shadow: 0px 4px 10px 0px rgba(0, 170, 157, 0.37), 0px 2px 9px 0px rgba(0, 170, 157, 0.63);
+}
+.btn {
+    background: #2b3f53;
+    color: #00aa9d;
+    border-color: #00aa9d;
+}
+
+.btn:hover {
+    color: #00aa9d;
+    box-shadow: 0px 4px 10px 0px rgba(0, 170, 157, 0.37), 0px 2px 9px 0px rgba(0, 170, 157, 0.63);
+}
+.btn:focus {
+    color: #00aa9d;
+}
+
+.sideMenu {
+    background: #2b3f53;
+}
+
+.sideMenu ul > li {
+    background: #2b3f53;
+    color: #00aa9d;
+}
+
+.sideMenu ul > li:hover {
+    background: #00aa9d;
+}
+
+.botIcon {
+    background: #2b3f53;
+    color: #00aa9d;
+    border-color: #00aa9d;
+}
+
+.userIcon {
+    background: #2b3f53;
+    color: #00aa9d;
+    border-color: #00aa9d;
+}
+
+.botMessage {
+    border-color: #00aa9d;
+    color: #00aa9d;
+}
+
+.personMessage {
+    background: #00aa9d;
+    color: #2b3f53;
+    border-color: #00aa9d;
+}
