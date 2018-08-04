@@ -30,7 +30,7 @@ font-family: 'Chau Philomene One', sans-serif;
     <!-- ***************** Dev Styles End ************************************************* -->
 </head>
 
-<body ng-app="NapierAssistant" ng-controller="LoginController" ng-init="cross=false;show=false;">
+<body ng-app="NapierAssistant" ng-controller="LoginController as lc" ng-init="cross=false;show=false;">
 
 <div class="body">
     <div class="frame">
@@ -46,10 +46,22 @@ font-family: 'Chau Philomene One', sans-serif;
             </div>
 
         </div>
+        
+        <div class="message-area">
+            <ul>
+                <li  ng-repeat="msg in lc.messageList">
+                  <div class="row">
+                          <button class="botIcon" ng-if="!msg.person"><img src="assets/images/logo_one.png" alt="image" height="20" width="20"></button>
+                          <button class="userIcon" style="float:right" ng-if="msg.person"><i class="fas fa-user"></i></button>
+                          <p class="message" ng-class="{'botMessage' : !msg.person, 'personMessage':msg.person}" ng-bind="msg.text"></p>
+                  </div>                            
+                </li>
+            </ul>
+        </div>
         <div class="input-area">
 
-            <input type="text" class="inputBox" ng-model="data.inputMsg" placeholder="Say something..">
-            <button class="btn" ng-click="send()"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            <input type="text" class="inputBox" ng-model="lc.inputMsg" placeholder="Say something..">
+            <button class="btn" ng-click="lc.send()"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
         </div>
         
         <div class="sideMenu" ng-class="{'visible' : show, 'opaque': show}">
@@ -58,6 +70,8 @@ font-family: 'Chau Philomene One', sans-serif;
                 <li class="sideMenuItem">Item 2</li>
             </ul>
         </div>
+        
+        
     </div>
 </div>
     
@@ -79,7 +93,7 @@ font-family: 'Chau Philomene One', sans-serif;
     <!--    <script src="autoCss/awesomplete.js"></script>-->
 
     <!-- ******************* Dev Scripts Goes here *************************************************** -->
-    <script src="app/js/test.js"></script>
+    <script src="app/js/app_new.js"></script>
 
 
     <!-- ******************* Dev Scripts End *************************************************** -->

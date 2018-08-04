@@ -159,6 +159,9 @@ body{
 /*    background: #00aa9d;*/
     transition: 0.3s ease;
 }
+.btn:focus{
+    color: #00aa9d;
+}
 /********************* Side Menu *************************************/
 .sideMenu {
     z-index: 10;
@@ -181,9 +184,10 @@ body{
     
     left: 0px;
 }
-.sideMenu ul{
+ul{
     list-style-type: none;
-    
+    margin: 0px !important;
+    padding: 0px !important;
 } 
 .sideMenu ul>li {
     font-family: 'Varela Round', sans-serif;
@@ -198,6 +202,66 @@ body{
 .sideMenu ul>li:hover {
     background: #00aa9d;
     color: white;
+}
+
+/********************************** MESSAGES *****************************************/
+.botIcon{
+    outline: none !important;
+    margin: 10px 5px 10px 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-left: 3px;
+    font-size: 14px;
+/*    background: white;*/
+    vertical-align:top;
+    background: #2b3f53;
+    color: #00aa9d;
+    border: 1px solid #00aa9d;
+}
+.userIcon{
+    outline: none !important;
+    margin: 10px 5px 10px 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+/*    background: white;*/
+    vertical-align:bottom;
+    background: #2b3f53;
+    color: #00aa9d;
+    border: 1px solid #00aa9d;
+}
+.botIcon img{
+    margin-bottom: 0;
+}
+.message-area{
+    position: relative;
+}
+.message{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
+    width: 60%;
+}
+.botMessage {
+    border: 1px solid #00aa9d;
+    color: #00aa9d;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.personMessage{
+    border: 1px solid #00aa9d;
+    float: right;
+    background: #00aa9d;
+    color: #2b3f53;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 0px;
 }
 @media screen and (max-width: 1024px) {
   .frame {
