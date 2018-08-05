@@ -3,7 +3,7 @@
 }
 
 .header {
-    background: #ec407a;
+    background: #FF5722;
 }
 
 .header h4 {
@@ -24,7 +24,7 @@
 .inputBox {
     background: #ffffff;
     color: #797979;
-    border-color: #ec407a;
+    border-color: #FF5722;
 }
 .inputBox:hover,
 .inputBox:focus {
@@ -40,8 +40,8 @@
 }
 .btn {
     background: #ffffff;
-    color: #ec407a;
-    border-color: #ec407a;
+    color: #FF5722;
+    border-color: #FF5722;
 }
 
 .btn:hover {
@@ -55,11 +55,11 @@
 }
 
 .sideMenu {
-    background: #ec407a;
+    background: #FF5722;
 }
 
 .sideMenu ul > li {
-    background: #ec407a;
+    background: #FF5722;
     color: #ffffff;
 }
 
@@ -69,9 +69,9 @@
 }
 
 .botIcon {
-    background: #ec407a;
-    color: #ec407a;
-    border-color: #ec407a;
+    background: #FF5722;
+    color: #FF5722;
+    border-color: #FF5722;
 }
 
 .userIcon {
@@ -81,8 +81,8 @@
 }
 
 .botMessage {
-    border-color: #ec407a;
-    color: #ec407a;
+    border-color: #FF5722;
+    color: #FF5722;
 }
 
 .personMessage {
