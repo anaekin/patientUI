@@ -33,7 +33,7 @@ app.directive('scrollBottom', function() {
 app.controller('LoginController', ['$scope', function ($scope) {
     var lc = this;
     lc.lightTheme = false;
-    
+    lc.botThinking = true;
     
     lc.messageList = [{
         text: "Hi! How Can I help you? Please write or say something",
