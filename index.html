@@ -30,6 +30,7 @@ font-family: 'Chau Philomene One', sans-serif;
     
 <!--    <link href="assets/css/style_animesh.css" rel="stylesheet">-->
     <link href="assets/css/style_main.css" rel="stylesheet">
+    <link href="assets/css/animation_new.css" rel="stylesheet">
 <!--    <link href="assets/css/color.css" rel="stylesheet">-->
     
     
@@ -37,8 +38,17 @@ font-family: 'Chau Philomene One', sans-serif;
 </head>
 
 <body ng-app="NapierAssistant" ng-controller="LoginController as lc" ng-init="cross=false;show=false;">
-<link href="{{lc.themeCss}}" rel="stylesheet">
+<link ng-href="{{lc.themeCss}}" rel="stylesheet">
 <div class="body">
+   <div class="animation-frame">
+       <div class="sub">
+            <div class="inside-sub">
+
+            </div>
+            <div class="inside-sub-2"></div>
+            <div class="smile"></div>
+        </div>
+    </div>
     <div class="frame">
         <div class="row header">
             <div class="col-md-1 col-xs-1 menubar" ng-class="{'change':cross}" ng-click="cross=!cross; show = !show; listening = false;">
@@ -48,7 +58,7 @@ font-family: 'Chau Philomene One', sans-serif;
             </div>
             <div class="col-md-11 col-xs-11 text-center header-head">
 
-                <h4><img src="{{lc.botIconPath}}" alt="image" height="40" width="40"> Napier Assistant</h4>
+                <h4><img ng-src="{{lc.botIconPath}}" alt="image" height="40" width="40"> Napier Assistant</h4>
             </div>
 
         </div>
@@ -57,7 +67,7 @@ font-family: 'Chau Philomene One', sans-serif;
             <ul class="message-list" >
                 <li  ng-repeat="msg in lc.messageList">
                   <div class="row" >
-                          <button class="botIcon" ng-if="!msg.person"><img src="{{lc.botIconPath}}" alt="image" height="20" width="20"></button>
+                          <button class="botIcon" ng-if="!msg.person"><img ng-src="{{lc.botIconPath}}" alt="image" height="20" width="20"></button>
                           <button class="userIcon" style="float:right" ng-if="msg.person"><i class="fas fa-user"></i></button>
                           <p class="message" ng-class="{'botMessage' : !msg.person, 'personMessage':msg.person}" ng-bind="msg.text"></p>
                   </div>                            
@@ -95,7 +105,6 @@ font-family: 'Chau Philomene One', sans-serif;
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/mobiscroll.angularjs.min.js"></script>
     <!--    <script src="autoCss/awesomplete.js"></script>-->
 
     <!-- ******************* Dev Scripts Goes here *************************************************** -->

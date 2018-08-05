@@ -19,7 +19,7 @@ body {
     z-index: 50;
 }
 
-.frame {
+.frame, .animation-frame {
     margin: auto;
     z-index: 100;
     position: absolute;
@@ -31,7 +31,9 @@ body {
     height: calc(100% - 50px - 50px);
 
 }
-
+.animation-frame{
+    background: white;
+}
 .row {
 
     margin-left: 0px !important;
@@ -303,7 +305,7 @@ ul {
     .row {
         margin-right: 0px !important;
     }
-    .frame {
+    .frame , .animation-frame{
         width: 688px;
         height: calc(100% - 50px - 50px);
     }
@@ -314,7 +316,7 @@ ul {
     .row {
         margin-right: 0px !important;
     }
-    .frame {
+    .frame , .animation-frame{
         width: 100%;
         height: 100%;
     }
