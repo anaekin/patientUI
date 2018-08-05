@@ -96,7 +96,7 @@ app.controller('LoginController', ['$scope', function ($scope) {
         } else {
             lc.currentTheme = 'Light';
             lc.themeCss = 'assets/css/color_new2.css';
-            lc.botIconPath = 'assets/images/logo_three.png';
+            lc.botIconPath = 'assets/images/logo_four.png';
             lc.themeColor = '#FF5722';
         }
     };
