@@ -2,7 +2,7 @@
   "name": "Napier Assistant",
   "icons": [
     {
-      "src": "app/assets/logo_four.png",
+      "src": "assets/images/logo_four.png",
       "sizes": "350x350",
       "type": "image/png",
       "density": 4
