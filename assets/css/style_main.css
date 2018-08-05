@@ -29,7 +29,7 @@ body {
     right: 0;
     width: 500px;
     height: calc(100% - 50px - 50px);
-    
+
 }
 
 .row {
@@ -40,14 +40,14 @@ body {
 
 .header {
     text-align: center;
-    
+
     margin: 0px !important;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
 .header h4 {
     font-size: 26px;
-    
+
     line-height: 60px;
     margin: 0px !important;
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
@@ -80,7 +80,7 @@ body {
 .bar3 {
     width: 25px;
     height: 2px;
-   
+
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -124,7 +124,7 @@ body {
     font-size: 18px;
     font-family: 'Varela Round', sans-serif;
     border: 0.5px solid;
-    
+
 
 }
 
@@ -177,7 +177,7 @@ body {
     z-index: 10;
     height: calc(100% - 60px);
     position: absolute;
-    
+
     width: 75%;
     left: -500px;
     opacity: 0;
@@ -202,7 +202,6 @@ ul {
 
 .sideMenu ul > li {
     font-family: 'Varela Round', sans-serif;
-    padding: 10px;
     font-size: 16px;
 
     cursor: pointer;
@@ -243,9 +242,9 @@ ul {
     padding-left: 3px;
     font-size: 14px;
     vertical-align: top;
-    
-  
-    border: 1px solid ;
+
+
+    border: 1px solid;
 }
 
 .userIcon {
@@ -257,7 +256,7 @@ ul {
     font-size: 14px;
     vertical-align: bottom;
 
-    border: 1px solid ;
+    border: 1px solid;
 }
 
 .botIcon img {
@@ -270,12 +269,12 @@ ul {
     margin: 10px 5px 10px 5px;
     width: 60%;
     font-family: 'Varela Round', sans-serif;
-        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+
 }
 
 .botMessage {
-    border: 1px solid ;
-    
+    border: 1px solid;
+
     border-top-left-radius: 0px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -290,6 +289,14 @@ ul {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 0px;
+}
+
+.themeBtn {
+    border: none;
+    background: #FF5722;
+    padding: 10px;
+    width: 100%;
+    cursor:pointer;
 }
 
 @media screen and (max-width: 1024px) {

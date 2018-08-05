@@ -80,3 +80,16 @@
     color: #2b3f53;
     border-color: #00aa9d;
 }
+.message{
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.58), 0px 3px 10px 0px rgba(0, 0, 0, 0.36);
+}
+
+.themeBtn{
+    background: #2b3f53;
+    color:#00aa9d;
+
+}
+.themeBtn:hover{
+        background: #00aa9d;
+    color:#2b3f53;
+}

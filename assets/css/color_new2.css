@@ -90,3 +90,14 @@
     color:#4198e4;
     border-color: #4198e4;
 }
+.message {
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.themeBtn{
+    background: #FF5722;
+    color:#ffffff;
+}
+.themeBtn:hover{
+    background: #ffffff;
+    color:#FF5722;
+}

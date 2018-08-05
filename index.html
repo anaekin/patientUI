@@ -31,13 +31,13 @@ font-family: 'Chau Philomene One', sans-serif;
 <!--    <link href="assets/css/style_animesh.css" rel="stylesheet">-->
     <link href="assets/css/style_main.css" rel="stylesheet">
 <!--    <link href="assets/css/color.css" rel="stylesheet">-->
-    <link href="assets/css/color_new2.css" rel="stylesheet">
+    
     
     <!-- ***************** Dev Styles End ************************************************* -->
 </head>
 
 <body ng-app="NapierAssistant" ng-controller="LoginController as lc" ng-init="cross=false;show=false;">
-
+<link href="{{lc.themeCss}}" rel="stylesheet">
 <div class="body">
     <div class="frame">
         <div class="row header">
@@ -73,8 +73,7 @@ font-family: 'Chau Philomene One', sans-serif;
         
         <div class="sideMenu" ng-class="{'visible' : show, 'opaque': show}">
             <ul>
-                <li class="sideMenuItem">Item 1</li>
-                <li class="sideMenuItem">Item 2</li>
+                <li class="sideMenuItem"><button  class="themeBtn" ng-click="lc.changeTheme()">Switch Theme : {{lc.currentTheme}}</button></li> 
             </ul>
         </div>
         

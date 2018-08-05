@@ -32,7 +32,10 @@ app.directive('scrollBottom', function() {
 });
 app.controller('LoginController', ['$scope', function ($scope) {
     var lc = this;
-
+    lc.themeCss = 'assets/css/color_new2.css';
+    lc.lightTheme = true;
+    lc.currentTheme = 'Light';
+    
     lc.messageList = [{
         text: "Hi! How Can I help you? Please write or say something",
         person: false
@@ -71,7 +74,7 @@ app.controller('LoginController', ['$scope', function ($scope) {
 //        text: "Your Welcome, Animesh!",
 //        person: false
 //    }
-                     ];
+    ];
 
     lc.send = function () {
         if (lc.inputMsg && lc.inputMsg !== '') {
@@ -81,6 +84,17 @@ app.controller('LoginController', ['$scope', function ($scope) {
             });
 
             lc.inputMsg = '';
+        }
+    };
+    
+    lc.changeTheme = function(){
+        lc.lightTheme = !lc.lightTheme;
+        if( !lc.lightTheme ){
+            lc.currentTheme = 'Dark';
+            lc.themeCss = 'assets/css/color.css';
+        } else {
+            lc.currentTheme = 'Light';
+            lc.themeCss = 'assets/css/color_new2.css';
         }
     };
 
