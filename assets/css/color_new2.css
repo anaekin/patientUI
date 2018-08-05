@@ -18,7 +18,7 @@
 .menubar:hover .bar1,
 .menubar:hover .bar2,
 .menubar:hover .bar3 {
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.37), 0px 2px 9px 0px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 1px 4px 0px rgba(65, 152, 228, 0.26), 0px 3px 10px 0px rgba(65, 152, 228, 0.31);
 
 }
 .inputBox {
@@ -29,7 +29,7 @@
 .inputBox:hover,
 .inputBox:focus {
     border-color: #4198e4;
-    box-shadow: 0px 4px 10px 0px rgba(65, 152, 228, 0.37), 0px 2px 9px 0px rgba(65, 152, 228, 0.63);
+    box-shadow: 0px 1px 4px 0px rgba(65, 152, 228, 0.26), 0px 3px 10px 0px rgba(65, 152, 228, 0.31);
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -47,7 +47,7 @@
 .btn:hover {
     border-color: #4198e4;
     color: #4198e4;
-    box-shadow: 0px 4px 10px 0px rgba(65, 152, 228, 0.37), 0px 2px 9px 0px rgba(65, 152, 228, 0.63);
+    box-shadow: 0px 1px 4px 0px rgba(65, 152, 228, 0.26), 0px 3px 10px 0px rgba(65, 152, 228, 0.31);
 }
 .btn:focus {
     border-color: #4198e4;
@@ -81,17 +81,25 @@
 }
 
 .botMessage {
-    border-color: #FF5722;
-    color: #FF5722;
+    border-color: #FFF;
+    color: #ff5722;
 }
 
 .personMessage {
 /*    background: #4198e4;*/
     color:#4198e4;
-    border-color: #4198e4;
+    border-color: #FFF;
 }
+/*
 .message {
       box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+}
+*/
+.message.personMessage {
+    box-shadow: 0px 1px 5px 0px rgba(65, 152, 228, 0.2), 0px 3px 10px 0px rgba(65, 152, 228, 0.15);
+}
+.message.botMessage {
+    box-shadow: 0px 1px 5px 0px rgba(255, 87, 34, 0.2), 0px 3px 10px 0px rgba(255, 87, 34, 0.15);
 }
 .themeBtn{
     background: #FF5722;
