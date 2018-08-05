@@ -13,18 +13,6 @@
             "sizes": "350x350",
             "type": "image/png",
             "density": 4
-    },
-        {
-            "src": "assets/images/website_logo_light_simple.png",
-            "sizes": "350x350",
-            "type": "image/png",
-            "density": 4
-    },
-        {
-            "src": "assets/images/website_logo_dark_simple.png",
-            "sizes": "350x350",
-            "type": "image/png",
-            "density": 4
     }
    ],
     "start_url": "index.html",
