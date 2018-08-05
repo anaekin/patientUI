@@ -1,0 +1,14 @@
+{
+  "name": "Napier Assistant",
+  "icons": [
+    {
+      "src": "app/assets/logo_four.png",
+      "sizes": "350x350",
+      "type": "image/png",
+      "density": 4
+    }
+   ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}
