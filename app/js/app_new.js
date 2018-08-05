@@ -32,9 +32,8 @@ app.directive('scrollBottom', function() {
 });
 app.controller('LoginController', ['$scope', function ($scope) {
     var lc = this;
-    lc.themeCss = 'assets/css/color_new2.css';
-    lc.lightTheme = true;
-    lc.currentTheme = 'Light';
+    lc.lightTheme = false;
+    
     
     lc.messageList = [{
         text: "Hi! How Can I help you? Please write or say something",
@@ -92,10 +91,13 @@ app.controller('LoginController', ['$scope', function ($scope) {
         if( !lc.lightTheme ){
             lc.currentTheme = 'Dark';
             lc.themeCss = 'assets/css/color.css';
+            lc.botIconPath = 'assets/images/logo_one.png';
         } else {
             lc.currentTheme = 'Light';
             lc.themeCss = 'assets/css/color_new2.css';
+            lc.botIconPath = 'assets/images/logo_three.png';
         }
     };
+    lc.changeTheme();
 
 }]);
