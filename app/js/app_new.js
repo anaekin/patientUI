@@ -32,9 +32,15 @@ app.directive('scrollBottom', function() {
 });
 app.controller('LoginController', ['$scope', function ($scope) {
     var lc = this;
+    
+    /************ Initialization **************************/
     lc.lightTheme = false;
     lc.botThinking = true;
+    lc.maxMessageCount = 30;
+    lc.messageList = [];
+    /***************** Initialization End ********************************/
     
+    /***** Dummy Data *******************************/
     lc.messageList = [{
         text: "Hi! How Can I help you? Please write or say something",
         person: false
@@ -57,25 +63,16 @@ app.controller('LoginController', ['$scope', function ($scope) {
         text: "Sure.",
         person: true
         }
-//    , {
-//        text: "There is availability for next Friday. Should I book the appointment?",
-//        person: false
-//    }, {
-//        text: "Ok",
-//        person: true
-//    }, {
-//        text: "Your appointment is booked for Friday 10:00AM at ABC Hospital.",
-//        person: false
-//    }, {
-//        text: "Thank You",
-//        person: true
-//    }, {
-//        text: "Your Welcome, Animesh!",
-//        person: false
-//    }
     ];
-
+/***** Dummy Data End *******************************/
     lc.send = function () {
+        
+        //delete the top element if count is greater than declared in 'lc.maxMessageCount' above
+        if(lc.messageList.length > lc.maxMessageCount){
+            lc.messageList.splice(0, lc.messageList.length - lc.maxMessageCount);
+        }
+        
+        //insert the message typed in messageList
         if (lc.inputMsg && lc.inputMsg !== '') {
             lc.messageList.push({
                 text: lc.inputMsg,
@@ -86,6 +83,8 @@ app.controller('LoginController', ['$scope', function ($scope) {
         }
     };
     
+    
+    // changing theme dynamically
     lc.changeTheme = function(){
         lc.lightTheme = !lc.lightTheme;
         if( !lc.lightTheme ){
