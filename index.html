@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="NapierAssistant" ng-controller="LoginController as lc">
 
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="theme-color" content="#00aa9d"> -->
 <!--    <meta name="theme-color" content="#4198e4">-->
-    <meta name="theme-color" content="#FF5722">
+    <meta name="theme-color" content="{{lc.themeColor}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
@@ -31,14 +31,15 @@ font-family: 'Chau Philomene One', sans-serif;
 <!--    <link href="assets/css/style_animesh.css" rel="stylesheet">-->
     <link href="assets/css/style_main.css" rel="stylesheet">
     <link href="assets/css/animation_new.css" rel="stylesheet">
+    <link ng-href="{{lc.themeCss}}" rel="stylesheet">
 <!--    <link href="assets/css/color.css" rel="stylesheet">-->
     
     
     <!-- ***************** Dev Styles End ************************************************* -->
 </head>
 
-<body ng-app="NapierAssistant" ng-controller="LoginController as lc" ng-init="cross=false;show=false;">
-<link ng-href="{{lc.themeCss}}" rel="stylesheet">
+<body  ng-init="cross=false;show=false;">
+
 <div class="body">
    <div class="animation-frame">
        <div class="sub">
