@@ -89,12 +89,12 @@ app.controller('LoginController', ['$scope', function ($scope) {
         lc.lightTheme = !lc.lightTheme;
         if( !lc.lightTheme ){
             lc.currentTheme = 'Dark';
-            lc.themeCss = 'assets/css/color.css';
+            lc.themeCss = 'assets/css/color_dark.css';
             lc.botIconPath = 'assets/images/logo_dark.png';
             lc.themeColor = '#00aa9d';
         } else {
             lc.currentTheme = 'Light';
-            lc.themeCss = 'assets/css/color_new2.css';
+            lc.themeCss = 'assets/css/color_light.css';
             lc.botIconPath = 'assets/images/logo_light.png';
             lc.themeColor = '#FF5722';
         }
